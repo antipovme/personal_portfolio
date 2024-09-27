@@ -1,0 +1,12 @@
+@import url("_fonts.scss");
+@import url("_variables.scss");
+@import url("./blocs/_header.scss");
+
+html {
+    font-family: "FiraCode-Retina";
+}
+
+.logo {
+    color: $color-blue-dove;
+    font-weight: 450;
+}

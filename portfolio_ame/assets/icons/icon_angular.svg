@@ -1,0 +1,16 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip3_223">
+			<rect id="Property 1=Angular" rx="-0.500000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g opacity="0.400000">
+		<rect id="Property 1=Angular" rx="-0.500000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+		<g clip-path="url(#clip3_223)">
+			<path id="Vector" d="M12 2L21.3 5.32L19.88 17.62L12 22L4.11 17.62L2.69 5.32L12 2ZM12 4.2L6.18 17.26L8.35 17.26L9.52 14.34L14.45 14.34L15.62 17.26L17.79 17.26L12 4.2ZM13.69 12.54L10.3 12.54L12 8.44L13.69 12.54Z" fill="#607B96" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "FiraCode-Light";
+    src:
+        local("FiraCodeLight"),
+        local("FiraCode-Light"),
+        url("/portfolio_ame/assets/fonts/FiraCode-Light.woff2") format("woff2");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "FiraCode-Medium";
+    src:
+        local("FiraCodeMedium"),
+        local("FiraCode-Medium"),
+        url("/portfolio_ame/assets/fonts/FiraCode-Medium.woff2") format("woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "FiraCode-Regular";
+    src:
+        local("FiraCode"),
+        local("FiraCode-Regular"),
+        url("/portfolio_ame/assets/fonts/FiraCode-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "FiraCode-Retina";
+    src:
+        local("FiraCodeRetina"),
+        local("FiraCode-Retina"),
+        url("/portfolio_ame/assets/fonts/FiraCode-Retina.woff2") format("woff2");
+    font-weight: 450;
+}
+
+@font-face {
+    font-family: "FiraCode-SemiBold";
+    src:
+        local("FiraCodeSemiBold"),
+        local("FiraCode-SemiBold"),
+        url("/portfolio_ame/assets/fonts/FiraCode-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "FiraCode-Bold";
+    src:
+        local("FiraCodeBold"),
+        local("FiraCode-Bold"),
+        url("/portfolio_ame/assets/fonts/FiraCode-Bold.woff2") format("woff2");
+    font-weight: 700;
+}

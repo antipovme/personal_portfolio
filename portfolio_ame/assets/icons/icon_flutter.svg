@@ -1,0 +1,16 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip3_237">
+			<rect id="Property 1=Flutter" rx="-0.500000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g opacity="0.400000">
+		<rect id="Property 1=Flutter" rx="-0.500000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+		<g clip-path="url(#clip3_237)">
+			<path id="Vector" d="M13.9 2L3.9 12L6.99 15.08L20.07 2L13.9 2ZM13.9 11.19L8.52 16.61L13.89 21.99L20.08 21.99L14.7 16.59L20.09 11.19L13.9 11.19L13.9 11.19Z" fill="#607B96" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+	</g>
+</svg>
