@@ -1,12 +1,109 @@
-@import url("_fonts.scss");
-@import url("_variables.scss");
-@import url("./blocs/_header.scss");
+@use "_fonts";
+@import "_normalize";
+@import "_variables";
 
 html {
     font-family: "FiraCode-Retina";
+    font-weight: 400;
+    font-size: 18px;
 }
 
-.logo {
-    color: $color-blue-dove;
+body {
+    background-color: $color-secondary-white;
+}
+
+main {
+    max-width: 1780px;
+    margin: 0 auto;
+    background: $color-primary-grey;
+    border: 1px solid rgb(30, 45, 61);
+    border-radius: 8px;
+}
+
+.hello {
+    height: 90vh;
+}
+
+.text {
+    padding-left: 22px;
+    color: $color-secondary-grey-l;
     font-weight: 450;
+    width: 310px;
+    &.footer {
+        padding-right: 18px;
+    }
+}
+
+.header {
+    display: flex;
+    height: 60px;
+    max-width: 100%;
+    align-items: center;
+    border-bottom: 1px solid $color-lines;
+    .header__btn {
+        padding-left: 32px;
+    }
+}
+
+.navigation {
+    height: 60px;
+    width: 100%;
+}
+.menu {
+    display: flex;
+    color: $color-secondary-grey-l;
+    list-style: none;
+    gap: 31px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        padding-left: 32px;
+        border-left: 1px solid $color-lines;
+        &:nth-child(3) {
+            border-right: 1px solid $color-lines;
+            padding-right: 32px;
+        }
+        &:last-child {
+            margin-left: auto;
+            margin-right: 23px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $color-secondary-grey-l;
+    }
+}
+
+footer {
+    display: flex;
+    height: 60px;
+    max-width: 100%;
+    align-items: center;
+    border-top: 1px solid $color-lines;
+}
+
+.wrapper__footer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footer__icons {
+    height: 100%;
+    width: 52px;
+    border-left: 1px solid $color-lines;
+    border-right: 1px solid $color-lines;
+    &-item img {
+    }
+    &:last-child {
+        margin-left: auto;
+        width: 161px;
+    }
+    a {
+        text-decoration: none;
+        color: $color-secondary-grey-l;
+    }
 }
