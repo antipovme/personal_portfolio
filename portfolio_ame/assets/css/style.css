@@ -209,9 +209,6 @@ main {
   font-weight: 450;
   width: 310px;
 }
-.text.footer {
-  padding-right: 18px;
-}
 
 .header {
   display: flex;
@@ -233,22 +230,19 @@ main {
   display: flex;
   color: #607b96;
   list-style: none;
-  gap: 31px;
 }
 .menu__item {
   display: flex;
   align-items: center;
   height: 60px;
-  padding-left: 32px;
+  padding: 23px;
   border-left: 1px solid #1e2d3d;
 }
 .menu__item:nth-child(3) {
   border-right: 1px solid #1e2d3d;
-  padding-right: 32px;
 }
 .menu__item:last-child {
   margin-left: auto;
-  margin-right: 23px;
 }
 .menu a {
   text-decoration: none;
@@ -271,6 +265,9 @@ footer {
 }
 
 .footer__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   width: 52px;
   border-left: 1px solid #1e2d3d;
@@ -278,7 +275,13 @@ footer {
 }
 .footer__icons:last-child {
   margin-left: auto;
-  width: 161px;
+  width: 169px;
+}
+.footer__icons:last-child::after {
+  padding-left: 5px;
+  width: 24px;
+  height: 24px;
+  content: url(/portfolio_ame/assets/icons/icon_github.svg);
 }
 .footer__icons a {
   text-decoration: none;

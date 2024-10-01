@@ -29,9 +29,6 @@ main {
     color: $color-secondary-grey-l;
     font-weight: 450;
     width: 310px;
-    &.footer {
-        padding-right: 18px;
-    }
 }
 
 .header {
@@ -53,21 +50,17 @@ main {
     display: flex;
     color: $color-secondary-grey-l;
     list-style: none;
-    gap: 31px;
-
     &__item {
         display: flex;
         align-items: center;
         height: 60px;
-        padding-left: 32px;
+        padding: 23px;
         border-left: 1px solid $color-lines;
         &:nth-child(3) {
             border-right: 1px solid $color-lines;
-            padding-right: 32px;
         }
         &:last-child {
             margin-left: auto;
-            margin-right: 23px;
         }
     }
     a {
@@ -92,15 +85,22 @@ footer {
 }
 
 .footer__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 52px;
     border-left: 1px solid $color-lines;
     border-right: 1px solid $color-lines;
-    &-item img {
-    }
     &:last-child {
         margin-left: auto;
-        width: 161px;
+        width: 169px;
+        &::after {
+            padding-left: 5px;
+            width: 24px;
+            height: 24px;
+            content: url(/portfolio_ame/assets/icons/icon_github.svg);
+        }
     }
     a {
         text-decoration: none;
