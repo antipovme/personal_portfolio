@@ -220,6 +220,12 @@ main {
   color: #e5e9f0;
 }
 
+.hero__profession {
+  font-weight: 500;
+  color: #4d5bce;
+  font-size: 32px;
+}
+
 .header {
   display: flex;
   height: 60px;
@@ -229,6 +235,17 @@ main {
 }
 .header .header__btn {
   padding-left: 32px;
+}
+
+.hero__inner {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__blur {
+  width: 50%;
+  height: auto;
 }
 
 .navigation {
