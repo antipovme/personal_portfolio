@@ -185,7 +185,7 @@ svg * {
   padding-left: 22px;
   color: #607b96;
   font-weight: 450;
-  width: 310px;
+  width: 438px;
 }
 
 .header {
@@ -212,8 +212,9 @@ svg * {
 .menu__item {
   display: flex;
   align-items: center;
+  width: 10%;
   height: 60px;
-  padding: 23px;
+  padding: 10px;
   border-left: 1px solid #1e2d3d;
 }
 .menu__item:nth-child(3) {
@@ -285,5 +286,32 @@ main {
 }
 
 section {
+  height: 90vh;
+}
+
+.about__column {
+  display: flex;
+}
+
+.column__icons {
+  width: 5%;
+  height: 90vh;
+  border-right: solid 1px #1e2d3d;
+}
+
+.column__list {
+  width: 15%;
+  height: 90vh;
+  border-right: solid 1px #1e2d3d;
+}
+
+.column__textarea {
+  width: 40%;
+  height: 90vh;
+  border-right: solid 1px #1e2d3d;
+}
+
+.column__showcase {
+  width: 40%;
   height: 90vh;
 }/*# sourceMappingURL=about.css.map */

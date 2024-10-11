@@ -28,7 +28,7 @@ section {
     padding-left: 22px;
     color: $color-secondary-grey-l;
     font-weight: 450;
-    width: 310px;
+    width: 438px;
 }
 
 .hero__title {
@@ -180,6 +180,7 @@ section {
     &__item {
         display: flex;
         align-items: center;
+        width: 10%;
         height: 60px;
         padding: 23px;
         border-left: 1px solid $color-lines;

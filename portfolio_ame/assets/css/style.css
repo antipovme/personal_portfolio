@@ -207,7 +207,7 @@ section {
   padding-left: 22px;
   color: #607b96;
   font-weight: 450;
-  width: 310px;
+  width: 438px;
 }
 
 .hero__title {
@@ -358,6 +358,7 @@ section {
 .menu__item {
   display: flex;
   align-items: center;
+  width: 10%;
   height: 60px;
   padding: 23px;
   border-left: 1px solid #1e2d3d;

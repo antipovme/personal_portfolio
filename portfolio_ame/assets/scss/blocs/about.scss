@@ -25,3 +25,30 @@ main {
 section {
     height: 90vh;
 }
+
+.about__column {
+    display: flex;
+}
+
+.column__icons {
+    width: 5%;
+    height: 90vh;
+    border-right: solid 1px $color-lines;
+}
+
+.column__list {
+    width: 15%;
+    height: 90vh;
+    border-right: solid 1px $color-lines;
+}
+
+.column__textarea {
+    width: 40%;
+    height: 90vh;
+    border-right: solid 1px $color-lines;
+}
+
+.column__showcase {
+    width: 40%;
+    height: 90vh;
+}

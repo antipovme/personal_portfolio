@@ -2,7 +2,7 @@
     padding-left: 22px;
     color: $color-secondary-grey-l;
     font-weight: 450;
-    width: 310px;
+    width: 438px;
 }
 
 .header {
@@ -27,8 +27,9 @@
     &__item {
         display: flex;
         align-items: center;
+        width: 10%;
         height: 60px;
-        padding: 23px;
+        padding: 10px;
         border-left: 1px solid $color-lines;
         &:nth-child(3) {
             border-right: 1px solid $color-lines;
