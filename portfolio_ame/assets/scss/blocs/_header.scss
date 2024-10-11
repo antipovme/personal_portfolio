@@ -1,0 +1,44 @@
+.text {
+    padding-left: 22px;
+    color: $color-secondary-grey-l;
+    font-weight: 450;
+    width: 310px;
+}
+
+.header {
+    display: flex;
+    height: 60px;
+    max-width: 100%;
+    align-items: center;
+    border-bottom: 1px solid $color-lines;
+    .header__btn {
+        padding-left: 32px;
+    }
+}
+
+.navigation {
+    height: 60px;
+    width: 100%;
+}
+.menu {
+    display: flex;
+    color: $color-secondary-grey-l;
+    list-style: none;
+    &__item {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        padding: 23px;
+        border-left: 1px solid $color-lines;
+        &:nth-child(3) {
+            border-right: 1px solid $color-lines;
+        }
+        &:last-child {
+            margin-left: auto;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $color-secondary-grey-l;
+    }
+}
