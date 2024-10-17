@@ -336,6 +336,22 @@ section {
 .column__list {
   width: 80%;
   height: 90vh;
+  font-weight: 400;
+  font-size: 16px;
+  color: #607b96;
+}
+.column__list h2 {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.personalinfo-title {
+  height: 40px;
+  border-bottom: solid 1px #1e2d3d;
+  text-align: center;
+}
+.personalinfo-title h2::before {
+  content: url(/portfolio_ame/assets/icons/icon_triangle.svg);
 }
 
 .column__textarea {

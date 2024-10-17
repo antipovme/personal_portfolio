@@ -58,6 +58,24 @@ section {
 .column__list {
     width: 80%;
     height: 90vh;
+    font-weight: 400;
+    font-size: 16px;
+    color: $color-secondary-grey-l;
+    h2 {
+        font-size: 16px;
+        color: $color-secondary-white;
+    }
+}
+
+.personalinfo-title {
+    height: 40px;
+    border-bottom: solid 1px $color-lines;
+    text-align: center;
+    h2 {
+        &::before {
+            content: url(/portfolio_ame/assets/icons/icon_triangle.svg);
+        }
+    }
 }
 
 .column__textarea {
