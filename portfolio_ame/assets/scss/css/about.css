@@ -185,7 +185,7 @@ svg * {
   padding-left: 22px;
   color: #607b96;
   font-weight: 450;
-  width: 438px;
+  width: 25%;
 }
 
 .header {
@@ -212,9 +212,8 @@ svg * {
 .menu__item {
   display: flex;
   align-items: center;
-  width: 10%;
+  min-width: 150px;
   height: 60px;
-  padding: 10px;
   border-left: 1px solid #1e2d3d;
 }
 .menu__item:nth-child(3) {
@@ -222,10 +221,13 @@ svg * {
 }
 .menu__item:last-child {
   margin-left: auto;
+  min-width: 180px;
 }
 .menu a {
+  width: 100%;
   text-decoration: none;
   color: #607b96;
+  text-align: center;
 }
 
 footer {
@@ -243,18 +245,31 @@ footer {
   align-items: center;
 }
 
+.footer__text {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  padding-left: 20px;
+  align-items: center;
+  color: #607b96;
+  font-weight: 450;
+  border-top: solid 1px #1e2d3d;
+}
+
 .footer__icons {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 52px;
+  width: 5%;
   border-left: 1px solid #1e2d3d;
+}
+.footer__icons:nth-child(2) {
   border-right: 1px solid #1e2d3d;
 }
 .footer__icons:last-child {
   margin-left: auto;
-  width: 169px;
+  width: 180px;
 }
 .footer__icons:last-child::after {
   padding-left: 5px;
@@ -278,6 +293,8 @@ body {
 }
 
 main {
+  display: grid;
+  grid-template-columns: 20% 1fr;
   max-width: 1780px;
   margin: 0 auto;
   background: #011627;
@@ -289,29 +306,46 @@ section {
   height: 90vh;
 }
 
+.logo {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  padding-left: 20px;
+  align-items: center;
+  color: #607b96;
+  font-weight: 450;
+  border-bottom: solid 1px #1e2d3d;
+}
+
 .about__column {
   display: flex;
 }
 
 .column__icons {
-  width: 5%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 20%;
+  padding-top: 30px;
   height: 90vh;
   border-right: solid 1px #1e2d3d;
 }
 
 .column__list {
-  width: 15%;
+  width: 80%;
   height: 90vh;
-  border-right: solid 1px #1e2d3d;
 }
 
 .column__textarea {
   width: 40%;
   height: 90vh;
+  border-left: solid 1px #1e2d3d;
   border-right: solid 1px #1e2d3d;
 }
 
 .column__showcase {
-  width: 40%;
+  width: 60%;
   height: 90vh;
 }/*# sourceMappingURL=about.css.map */
