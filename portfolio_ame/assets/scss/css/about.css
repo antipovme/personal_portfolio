@@ -345,13 +345,89 @@ section {
   color: #ffffff;
 }
 
-.personalinfo-title {
+.folder-title {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
   height: 40px;
   border-bottom: solid 1px #1e2d3d;
-  text-align: center;
 }
-.personalinfo-title h2::before {
+.folder-title h2::before {
+  margin-right: 10px;
   content: url(/portfolio_ame/assets/icons/icon_triangle.svg);
+}
+
+.folder__personalinfo {
+  padding-bottom: 40px;
+  height: auto;
+  border-bottom: solid 1px #1e2d3d;
+}
+
+.personalinfo-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 17px;
+  padding-left: 10px;
+  height: 50%;
+}
+
+.dropmenu-bio::before {
+  margin-right: 10px;
+  margin-left: 10px;
+  content: url(/portfolio_ame/assets/icons/icon_folder_orange.svg);
+}
+.dropmenu-bio::marker {
+  content: url(/portfolio_ame/assets/icons/arrow_drop.svg);
+}
+.dropmenu-interests::before {
+  margin-right: 10px;
+  margin-left: 10px;
+  content: url(/portfolio_ame/assets/icons/icon_folder_green.svg);
+}
+.dropmenu-interests::marker {
+  content: url(/portfolio_ame/assets/icons/arrow_drop.svg);
+}
+.dropmenu-education::before {
+  margin-right: 10px;
+  margin-left: 10px;
+  content: url(/portfolio_ame/assets/icons/icon_folder_blue.svg);
+}
+.dropmenu-education::marker {
+  content: url(/portfolio_ame/assets/icons/arrow_drop.svg);
+}
+.dropmenu-text {
+  padding-top: 10px;
+  padding-left: 8px;
+}
+.dropmenu-text::before {
+  margin-right: 10px;
+  margin-left: 10px;
+  content: url(/portfolio_ame/assets/icons/icon_markdown.svg);
+}
+
+.folder__contacts {
+  padding-bottom: 40px;
+}
+
+.folder-text {
+  padding-top: 10px;
+  padding-left: 8px;
+}
+
+.email {
+  padding-top: 17px;
+}
+.email::before {
+  margin-right: 10px;
+  margin-left: 10px;
+  content: url(/portfolio_ame/assets/icons/icon_mail.svg);
+}
+
+.phone::before {
+  margin-right: 10px;
+  margin-left: 10px;
+  content: url(/portfolio_ame/assets/icons/icon_phone.svg);
 }
 
 .column__textarea {
