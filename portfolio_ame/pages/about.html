@@ -34,11 +34,9 @@
                 </div>
 
                 <div class="column__list">
-                    <div class="folder__personalinfo">
-                        <div class="folder-title">
-                            <h2 class="folder-title">personal-info</h2>
-                        </div>
-                        <div class="personalinfo-content">
+                    <details class="folder__personalinfo" open>
+                            <summary class="folder-title">personal-info</summary>
+                        <div class="personalinfo__menu">
                             <details class="dropmenu">
                                 <summary class="dropmenu-bio">bio</summary>
                                 <p class="dropmenu-text">year</p>
@@ -48,21 +46,19 @@
                                 <p class="dropmenu-text">сooking</p>
                                 <p class="dropmenu-text">tourism</p>
                             </details>
-                            <details class="dropmenu">
+                            <details class="dropmenu" open>
                                 <summary class="dropmenu-education">education</summary>
                                 <p class="dropmenu-text">high-school</p>
                                 <p class="dropmenu-text">university</p>
                             </details>
                         </div>
-                    </div>
+                    </details>
 
-                    <div class="folder__contacts">
-                        <div class="folder-title">
-                            <h2 class="folder-title">contacts</h2>
-                        </div>
-                        <p class="folder-text email">antipov.me@yandex.ru</p>
-                        <p class="folder-text phone">+7 918 001-22-33</p>
-                    </div>
+                    <details class="folder__contacts" open>
+                            <summary class="folder-title">contacts</summary>
+                            <p class="folder-text email">antipov.me@yandex.ru</p>
+                            <p class="folder-text phone">+7 918 001-22-33</p>
+                    </details>
 
 
                 </div>
@@ -96,10 +92,19 @@
                 </nav>
             </header>
 
-            <section class="about__column">
+            <section class="content__column">
 
                 <div class="column__textarea">
+                    <div class="folder__content">
+                        <div class="content-wrapper">
+                            <h2 class="folder__content-title">personal-info</h2>
+                            <img src="/portfolio_ame/assets/icons/icon_close.svg" alt="Close folder">
+                        </div>
 
+                    </div>
+                    <div class="column_scroll">
+
+                    </div>
                 </div>
 
                 <div class="column__showcase">

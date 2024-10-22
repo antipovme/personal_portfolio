@@ -351,19 +351,24 @@ section {
   padding-left: 10px;
   height: 40px;
   border-bottom: solid 1px #1e2d3d;
+  color: #ffffff;
+  transition: all 0.6s ease;
+  cursor: pointer;
 }
-.folder-title h2::before {
+.folder-title::before {
   margin-right: 10px;
   content: url(/portfolio_ame/assets/icons/icon_triangle.svg);
 }
+.folder-title:hover {
+  color: #fea55f;
+}
 
 .folder__personalinfo {
-  padding-bottom: 40px;
   height: auto;
   border-bottom: solid 1px #1e2d3d;
 }
 
-.personalinfo-content {
+.personalinfo__menu {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -435,6 +440,40 @@ section {
   height: 90vh;
   border-left: solid 1px #1e2d3d;
   border-right: solid 1px #1e2d3d;
+  display: flex;
+  flex-direction: column;
+}
+
+.folder__content {
+  border-bottom: solid 1px #1e2d3d;
+}
+.folder__content .content-wrapper {
+  display: flex;
+  border-right: solid 1px #1e2d3d;
+}
+.folder__content-title {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  height: 40px;
+  font-size: 16px;
+  color: #607b96;
+  transition: all 0.6s ease;
+  cursor: pointer;
+}
+.folder__content-title:hover {
+  color: #fea55f;
+}
+.folder__content img {
+  padding-right: 10px;
+  padding-left: 10px;
+  border-right: solid 1px #1e2d3d;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+.folder__content img:hover {
+  fill: #fea55f;
 }
 
 .column__showcase {
