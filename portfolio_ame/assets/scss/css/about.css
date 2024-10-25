@@ -442,8 +442,8 @@ section {
 }
 
 .column__textarea {
-  width: 40%;
-  height: 90vh;
+  width: 50%;
+  height: 100%;
   border-left: solid 1px #1e2d3d;
   border-right: solid 1px #1e2d3d;
 }
@@ -480,16 +480,12 @@ section {
 
 .content-wrapper {
   display: grid;
-  grid-template-columns: 1fr 5%;
-  height: auto;
+  grid-template-columns: 1fr 3%;
 }
 
 .column__content {
+  height: calc(90vh - 40px);
   border-right: solid 1px #1e2d3d;
-}
-
-.column_scroll {
-  height: 10%;
 }
 
 .column__showcase {
