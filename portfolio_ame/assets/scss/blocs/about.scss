@@ -220,6 +220,12 @@ section {
 .column__content {
     height: calc(90vh - 40px);
     border-right: solid 1px $color-lines;
+    &-title {
+        padding-left: 40px;
+        padding-top: 20px;
+        font-size: 18px;
+        font-weight: 450;
+    }
 }
 
 .column__showcase {
@@ -229,4 +235,48 @@ section {
         height: 40px;
         border-bottom: solid 1px $color-lines;
     }
+}
+
+.slider {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5%;
+
+    &__item {
+        height: 30%;
+        font-size: 0.8rem;
+        background-color: $color-primary-black;
+        border: solid 1px $color-lines;
+        border-radius: 15px;
+        color: $color-secondary-grey-l;
+        pre {
+            margin: 1em;
+        }
+        &:nth-child(even) {
+            z-index: 10;
+        }
+    }
+}
+
+.blue {
+    color: $color-gradient-blue;
+}
+
+.green {
+    color: $color-gradient-green;
+}
+
+.orange {
+    color: $color-acient-orange-l;
+}
+
+.grey {
+    color: $color-secondary-grey-l;
+}
+
+.pink {
+    color: $color-acient-pink;
 }
