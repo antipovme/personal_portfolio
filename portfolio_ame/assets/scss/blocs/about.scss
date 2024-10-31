@@ -237,23 +237,39 @@ section {
     }
 }
 
+.content__showcase {
+    width: 100%;
+}
+
 .slider {
+    width: 100%;
     display: flex;
     height: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 5%;
-
     &__item {
+        margin: 10px;
+        width: 90%;
         height: 30%;
         font-size: 0.8rem;
-        background-color: $color-primary-black;
-        border: solid 1px $color-lines;
-        border-radius: 15px;
-        color: $color-secondary-grey-l;
+        &-header {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            .icons {
+                display: flex;
+                gap: 5px;
+            }
+        }
         pre {
-            margin: 1em;
+            height: 300px;
+            padding: 7px;
+            background-color: $color-primary-black;
+            border: solid 1px $color-lines;
+            border-radius: 15px;
+            color: $color-secondary-grey-l;
         }
         &:nth-child(even) {
             z-index: 10;

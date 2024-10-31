@@ -503,7 +503,12 @@ section {
   border-bottom: solid 1px #1e2d3d;
 }
 
+.content__showcase {
+  width: 100%;
+}
+
 .slider {
+  width: 100%;
   display: flex;
   height: auto;
   flex-direction: column;
@@ -512,15 +517,27 @@ section {
   row-gap: 5%;
 }
 .slider__item {
+  margin: 10px;
+  width: 90%;
   height: 30%;
   font-size: 0.8rem;
+}
+.slider__item-header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.slider__item-header .icons {
+  display: flex;
+  gap: 5px;
+}
+.slider__item pre {
+  height: 300px;
+  padding: 7px;
   background-color: #01080e;
   border: solid 1px #1e2d3d;
   border-radius: 15px;
   color: #607b96;
-}
-.slider__item pre {
-  margin: 1em;
 }
 .slider__item:nth-child(even) {
   z-index: 10;
