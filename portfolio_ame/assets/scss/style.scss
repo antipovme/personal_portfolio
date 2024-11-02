@@ -101,6 +101,44 @@ section {
     background: $color-gradient-green;
     opacity: 1.1;
     z-index: 1;
+    animation: pulseGreen 10s infinite;
+}
+
+@keyframes pulseGreen {
+    0% {
+        background: hsl(162, 91%, 62%);
+        transform: translateY(20px);
+    }
+    10% {
+        background: hsl(162, 60%, 56%);
+    }
+    20% {
+        background: hsl(162, 59%, 56%);
+    }
+    30% {
+        background: hsl(162, 91%, 57%);
+    }
+    40% {
+        background: hsl(162, 64%, 48%);
+    }
+    50% {
+        background: hsl(162, 63%, 46%);
+    }
+    60% {
+        background: hsl(162, 81%, 48%);
+    }
+    70% {
+        background: hsl(162, 61%, 42%);
+    }
+    80% {
+        background: hsl(162, 60%, 40%);
+    }
+    90% {
+        background: hsl(162, 59%, 38%);
+    }
+    100% {
+        background: hsl(162, 55%, 36%);
+    }
 }
 
 .blur-blue {
@@ -109,11 +147,50 @@ section {
     height: 360px;
     top: 43%;
     left: 62%;
-    transform: rotate(13.51deg);
+    transform: rotate(94deg);
     filter: blur(174px);
-    background: $color-gradient-blue;
     opacity: 1.2;
     z-index: 1;
+    animation-delay: 2s;
+    animation: pulseBlue 10s infinite;
+}
+
+@keyframes pulseBlue {
+    0% {
+        del
+        background: hsl(233, 57%, 50%);
+        transform: translateZ(30px);
+    }
+    10% {
+        background: hsl(233, 57%, 49%);
+    }
+    20% {
+        background: hsl(233, 89%, 59%);
+    }
+    30% {
+        background: hsl(233, 57%, 47%);
+    }
+    40% {
+        background: hsl(233, 100%, 57%);
+    }
+    50% {
+        background: hsl(233, 57%, 45%);
+    }
+    60% {
+        background: hsl(233, 57%, 44%);
+    }
+    70% {
+        background: hsl(233, 57%, 43%);
+    }
+    80% {
+        background: hsl(233, 56%, 52%);
+    }
+    90% {
+        background: hsl(233, 57%, 41%);
+    }
+    100% {
+        background: hsl(233, 72%, 49%);
+    }
 }
 
 .slider {
