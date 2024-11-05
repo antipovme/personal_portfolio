@@ -157,7 +157,6 @@ section {
 
 @keyframes pulseBlue {
     0% {
-        del
         background: hsl(233, 57%, 50%);
         transform: translateZ(30px);
     }
@@ -194,6 +193,8 @@ section {
 }
 
 .slider {
+    position: relative;
+    overflow: hidden;
     display: flex;
     width: 50%;
     height: auto;
@@ -201,7 +202,12 @@ section {
     justify-content: center;
     align-items: center;
     row-gap: 5%;
-
+    &-button {
+        padding: 5px;
+        width: 100px;
+        height: 10px;
+        background-color: $color-secondary-grey-l;
+    }
     &__item {
         width: 90%;
         height: 30%;
@@ -216,6 +222,9 @@ section {
         &:nth-child(even) {
             z-index: 10;
         }
+    }
+    .hidden {
+        display: none;
     }
 }
 

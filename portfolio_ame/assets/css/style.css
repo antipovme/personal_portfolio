@@ -327,6 +327,7 @@ section {
   filter: blur(174px);
   opacity: 1.2;
   z-index: 1;
+  animation-delay: 2s;
   animation: pulseBlue 10s infinite;
 }
 
@@ -367,6 +368,8 @@ section {
   }
 }
 .slider {
+  position: relative;
+  overflow: hidden;
   display: flex;
   width: 50%;
   height: auto;
@@ -374,6 +377,12 @@ section {
   justify-content: center;
   align-items: center;
   row-gap: 5%;
+}
+.slider-button {
+  padding: 5px;
+  width: 100px;
+  height: 10px;
+  background-color: #607b96;
 }
 .slider__item {
   width: 90%;
@@ -389,6 +398,9 @@ section {
 }
 .slider__item:nth-child(even) {
   z-index: 10;
+}
+.slider .hidden {
+  display: none;
 }
 
 .header {
