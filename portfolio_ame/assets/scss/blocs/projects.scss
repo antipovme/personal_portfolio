@@ -1,0 +1,67 @@
+@import "../_fonts";
+@import "../_normalize";
+@import "../_variables";
+@import "./_header";
+@import "./_footer";
+
+html {
+    font-family: "FiraCode-Retina";
+    font-weight: 400;
+    font-size: 18px;
+}
+
+body {
+    background-color: $color-primary-black;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    max-width: 1780px;
+    margin: 0 auto;
+    background: $color-primary-grey;
+    border: 1px solid rgb(30, 45, 61);
+    border-radius: 8px;
+}
+
+section {
+    height: 90vh;
+}
+
+.column__menu {
+    border-right: solid 1px $color-lines;
+    height: 90vh;
+    font-weight: 400;
+    font-size: 16px;
+    color: #607b96;
+}
+
+.menu-title {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    height: 40px;
+    border-bottom: solid 1px #1e2d3d;
+    color: #ffffff;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+
+.checkbox-wrapper {
+    margin-top: 20px;
+    margin-left: 20px;
+
+    .checkbox {
+        margin-top: 5px;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 1px solid $color-secondary-grey-l;
+        }
+    }
+}

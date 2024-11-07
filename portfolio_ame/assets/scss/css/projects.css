@@ -304,6 +304,8 @@ body {
 }
 
 main {
+  display: grid;
+  grid-template-columns: 20% 1fr;
   max-width: 1780px;
   margin: 0 auto;
   background: #011627;
@@ -315,218 +317,39 @@ section {
   height: 90vh;
 }
 
-.text {
-  padding-left: 22px;
-  color: #607b96;
-  font-weight: 450;
-  width: 438px;
-}
-
-.hero__title {
-  font-weight: 450;
-  font-size: 4rem;
-  color: #e5e9f0;
-}
-
-.hero__subtitle {
-  font-size: 1rem;
-  color: #e5e9f0;
-}
-
-.hero__profession {
-  font-weight: 500;
-  color: #4d5bce;
-  font-size: 2rem;
-}
-.hero__profession::before {
-  content: ">";
-  margin-right: 1rem;
-}
-
-.hero__text {
-  margin-top: 15%;
-  font-size: 1rem;
-  color: #607b96;
-}
-.hero__text a {
-  text-decoration: none;
-}
-.hero__text a::after, .hero__text a::before {
-  content: "“";
-  color: #ffffff;
-}
-.hero__text p {
-  margin-bottom: 0;
-}
-
-.blue {
-  color: #4d5bce;
-}
-
-.green {
-  color: #43d9ad;
-}
-
-.orange {
-  color: #fea55f;
-}
-
-.grey {
+.column__menu {
+  border-right: solid 1px #1e2d3d;
+  height: 90vh;
+  font-weight: 400;
+  font-size: 16px;
   color: #607b96;
 }
 
-.pink {
-  color: #c98bdf;
-}
-
-.blur-green {
-  position: absolute;
-  width: 300px;
-  height: 460px;
-  top: 13%;
-  left: 50%;
-  transform: rotate(-94.3deg);
-  filter: blur(174px);
-  background: #43d9ad;
-  opacity: 1.1;
-  z-index: 1;
-  animation: pulseGreen 10s infinite;
-}
-
-@keyframes pulseGreen {
-  0% {
-    background: hsl(162, 91%, 62%);
-    transform: translateY(20px);
-  }
-  10% {
-    background: hsl(162, 60%, 56%);
-  }
-  20% {
-    background: hsl(162, 59%, 56%);
-  }
-  30% {
-    background: hsl(162, 91%, 57%);
-  }
-  40% {
-    background: hsl(162, 64%, 48%);
-  }
-  50% {
-    background: hsl(162, 63%, 46%);
-  }
-  60% {
-    background: hsl(162, 81%, 48%);
-  }
-  70% {
-    background: hsl(162, 61%, 42%);
-  }
-  80% {
-    background: hsl(162, 60%, 40%);
-  }
-  90% {
-    background: hsl(162, 59%, 38%);
-  }
-  100% {
-    background: hsl(162, 55%, 36%);
-  }
-}
-.blur-blue {
-  position: absolute;
-  width: 400px;
-  height: 360px;
-  top: 43%;
-  left: 62%;
-  transform: rotate(94deg);
-  filter: blur(174px);
-  opacity: 1.2;
-  z-index: 1;
-  animation-delay: 2s;
-  animation: pulseBlue 10s infinite;
-}
-
-@keyframes pulseBlue {
-  0% {
-    background: hsl(233, 57%, 50%);
-    transform: translateZ(30px);
-  }
-  10% {
-    background: hsl(233, 57%, 49%);
-  }
-  20% {
-    background: hsl(233, 89%, 59%);
-  }
-  30% {
-    background: hsl(233, 57%, 47%);
-  }
-  40% {
-    background: hsl(233, 100%, 57%);
-  }
-  50% {
-    background: hsl(233, 57%, 45%);
-  }
-  60% {
-    background: hsl(233, 57%, 44%);
-  }
-  70% {
-    background: hsl(233, 57%, 43%);
-  }
-  80% {
-    background: hsl(233, 56%, 52%);
-  }
-  90% {
-    background: hsl(233, 57%, 41%);
-  }
-  100% {
-    background: hsl(233, 72%, 49%);
-  }
-}
-.slider {
-  position: relative;
-  overflow: hidden;
+.menu-title {
   display: flex;
-  width: 50%;
-  height: auto;
-  flex-direction: column;
+  align-items: center;
+  padding-left: 10px;
+  height: 40px;
+  border-bottom: solid 1px #1e2d3d;
+  color: #ffffff;
+  transition: all 0.6s ease;
+  cursor: pointer;
+}
+
+.checkbox-wrapper {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.checkbox-wrapper .checkbox {
+  margin-top: 5px;
+  width: fit-content;
+  display: flex;
   justify-content: center;
   align-items: center;
-  row-gap: 5%;
 }
-.slider-button {
-  padding: 5px;
-  width: 100px;
-  height: 10px;
-  background-color: #607b96;
-}
-.slider__item {
-  width: 90%;
-  height: 30%;
-  font-size: 0.8rem;
-  background-color: #01080e;
-  border: solid 1px #1e2d3d;
-  border-radius: 15px;
-  color: #607b96;
-}
-.slider__item pre {
-  margin: 1em;
-}
-.slider__item:nth-child(even) {
-  z-index: 10;
-}
-.slider .hidden {
-  display: none;
-}
-
-.hero__inner {
-  width: 100%;
-  height: 100%;
-  padding: 5%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.hero__body {
-  padding-left: 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
-}/*# sourceMappingURL=style.css.map */
+.checkbox-wrapper .checkbox input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #607b96;
+}/*# sourceMappingURL=projects.css.map */
